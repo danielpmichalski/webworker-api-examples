@@ -1,0 +1,9 @@
+<html>
+<body>
+<p>test</p>
+<script type="text/javascript">
+    const worker = new Worker("worker1.js", {name: "MainWorker"});
+    worker.postMessage("test message from the main thread");
+</script>
+</body>
+</html>
